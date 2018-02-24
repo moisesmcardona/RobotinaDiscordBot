@@ -151,7 +151,6 @@ Public Class Form1
                                        "!google (terminos) - Busqueda en Google" & vbCrLf &
                                        "!wikipedia (artículo) - Busca en Wikipedia" & vbCrLf &
                                        "!perfil (usuario) - Dice el perfil tuyo o de un usuario." & vbCrLf &
-                                       "!ultimopost (opcional, la persona que quieras ver su último post. NOTA: Este comando no está activado en la sala #general)" & vbCrLf &
                                        vbCrLf & "También, puedes escribir algunas cosas naturalmente, como qué hora es y qué día es hoy." & vbCrLf & vbCrLf &
                                        MentionMoises.Mention & " es un Witness. Si te gusta este bot y sus proyectos, considera votándolo como Witness :heart:")
                     Threading.Thread.Sleep(500)
@@ -473,7 +472,7 @@ Public Class Form1
                         Next
                         Await e.Channel.SendMessageAsync(Reply)
                     Else
-                        Reply = GetOrCalculatePrice("steem", "USD")
+                        Reply = GetOrCalculatePrice("steem")
                         Await e.Channel.SendMessageAsync(Reply)
                     End If
                 ElseIf e.Message.Content.ToLower().Contains("!calcular") Then
