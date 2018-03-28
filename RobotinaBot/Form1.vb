@@ -495,7 +495,7 @@ Public Class Form1
             End If
             '339767929048399882 = #anuncios-y-noticias
             '390471607144939522 = #promociona-tu-post
-            '339205126923354123 = #denuncia-de-plajios
+            '339205126923354123 = #denuncia-de-plagios
             '390473677491273728 = #concurso
             '426792608950648832 = #revista-digital-criptonoticias
             '426780066442117130 = #comentanos-tu-articulo
