@@ -497,7 +497,11 @@ Public Class Form1
             '390471607144939522 = #promociona-tu-post
             '339205126923354123 = #denuncia-de-plajios
             '390473677491273728 = #concurso
-            If e.Channel.Id = 339767929048399882 = False And e.Channel.Id = 390471607144939522 = False And e.Channel.Id = 339205126923354123 = False And e.Channel.Id = 390473677491273728 = False And e.Channel.Id = 407207720614232064 = False Then
+            '426792608950648832 = #revista-digital-criptonoticias
+            '426780066442117130 = #comentanos-tu-articulo
+            '427560632544526346 = #anuncios
+            '407207720614232064 = #sugerencias
+            If e.Channel.Id = 339767929048399882 = False And e.Channel.Id = 390471607144939522 = False And e.Channel.Id = 339205126923354123 = False And e.Channel.Id = 390473677491273728 = False And e.Channel.Id = 407207720614232064 = False And e.Channel.Id = 426792608950648832 = False And e.Channel.Id = 426780066442117130 = False And e.Channel.Id = 427560632544526346 = False And e.Channel.Id = 407207720614232064 = False Then
                 If e.Message.Content.Contains("steemit.com/") Or e.Message.Content.Contains("busy.org/") Or e.Message.Content.Contains("utopian.io/") Then
                     Dim SplitWords As String() = e.Message.Content.Split("/")
                     If SplitWords.Count > 4 Then
